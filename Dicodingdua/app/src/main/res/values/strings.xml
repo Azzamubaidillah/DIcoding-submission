@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dicoding dua</string>
+    <string name="pindah">Pindah Activity</string>
+    <string name="pindah_data">Pindah Activity dengan Data</string>
+    <string name="dial">Dial a Number</string>
+    <string name="data_diterima">Data Diterima</string>
+    <string name="ini_moveactivity">INi Move Activity</string>
+</resources>
