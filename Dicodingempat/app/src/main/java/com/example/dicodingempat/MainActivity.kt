@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         showRecyclerList()
     }
 
+    private fun showRecyclerGrid() {
+        rvHeroes.layoutManager = GridLayoutManager(this,2)
+        val gridHeroAdapter = GridHeroAdapter(list)
+        rvHeroes.adapter = gridHeroAdapter
+    }
+
     private fun showRecyclerList() {
         rvHeroes.layoutManager = LinearLayoutManager(this)
         val listHeroAdapter = ListHeroAdapter(list)
@@ -57,10 +63,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showRecyclerGrid() {
-        rvHeroes.layoutManager = GridLayoutManager(this,2)
-        val gridHeroAdapter = GridHeroAdapter(list)
-        rvHeroes.adapter = gridHeroAdapter
-    }
+
 
 }
